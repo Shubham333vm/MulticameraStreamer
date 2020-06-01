@@ -131,14 +131,14 @@ int RecursiveCall=0;
   void zeitgeist_timestamp_to_timeval (gint64 timestamp,GTimeVal *result);
   char MY_TIME[50];
   char buff3[150]={0,};
-    char cmd2[150] = "cd /home/bitcomm-06/Gstreamer/Videos/Cam1/";
-    char camera2path[200] = "cd /home/bitcomm-06/Gstreamer/Videos/Cam2/";
-    char camera3path[200] = "cd /home/bitcomm-06/Gstreamer/Videos/Cam3/";
-    char camera4path[200] = "cd /home/bitcomm-06/Gstreamer/Videos/Cam4/";
-    char camera5path[200] = "cd /home/bitcomm-06/Gstreamer/Videos/Cam5/";
-    char camera6path[200] = "cd /home/bitcomm-06/Gstreamer/Videos/Cam6/";
-    char camera7path[200] = "cd /home/bitcomm-06/Gstreamer/Videos/Cam7/";
-    char camera8path[200] = "cd /home/bitcomm-06/Gstreamer/Videos/Cam8/";
+    char cmd2[150] = "cd /home/shubham-06/Gstreamer/Videos/Cam1/";
+    char camera2path[200] = "cd /home/shubham-06/Gstreamer/Videos/Cam2/";
+    char camera3path[200] = "cd /home/shubham-06/Gstreamer/Videos/Cam3/";
+    char camera4path[200] = "cd /home/shubham-06/Gstreamer/Videos/Cam4/";
+    char camera5path[200] = "cd /home/shubham-06/Gstreamer/Videos/Cam5/";
+    char camera6path[200] = "cd /home/shubham-06/Gstreamer/Videos/Cam6/";
+    char camera7path[200] = "cd /home/shubham-06/Gstreamer/Videos/Cam7/";
+    char camera8path[200] = "cd /home/shubham-06/Gstreamer/Videos/Cam8/";
    char camera2buffer[200]={0,};
    char camera3buffer[200]={0,};
    char camera4buffer[200]={0,};
@@ -163,7 +163,7 @@ int RecursiveCall=0;
  
        /*declare and initialise variable*/
         int i=0;
-        file_in=fopen("/home/bitcomm-06/Gstreamer/Id.txt","r");
+        file_in=fopen("/home/shubham-06/Gstreamer/Id.txt","r");
        /*stores and prints the data from the string*/
      
         while(fgets(buffer,70,file_in)!=NULL)
@@ -232,7 +232,7 @@ my_bool       is_null;
       exit(1);
   }
 
-  if (mysql_real_connect(con, "localhost", "root", "bitcomm",
+  if (mysql_real_connect(con, "localhost", "root", "shubham",
           "Media", 0, NULL, 0) == NULL)
   {
       //finish_with_error(con);
@@ -530,7 +530,7 @@ printf("Camera one is completed its time");
 ///////////////////////////////////////////////////Date Folder \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
     int parse_output() {
-    char *cmd = "cd /home/bitcomm-06/Gstreamer/Videos/Cam1 && ls -t";    
+    char *cmd = "cd /home/shubham-06/Gstreamer/Videos/Cam1 && ls -t";    
     char line[MAX_CHARS] = {0};
     
     int noOfLines = 0;
@@ -883,10 +883,10 @@ printf("start playing..\n");
 printf("start playing..\n");
      char buff[150]; 
 printf("Thread starting47....\n");
-     char path[150]="//home//bitcomm-06//Gstreamer//Videos//Cam1//";  
+     char path[150]="//home//shubham-06//Gstreamer//Videos//Cam1//";  
 printf("Thread starting 48...\n");
 printf("Array data is s==============================================%s",new_line[0]);
-   //  char path2[]="/home/bitcomm-31/Videos/";  
+   //  char path2[]="/home/shubham-31/Videos/";  
      strcat(path,new_line[0]);
 printf("Thread starting49....\n");
      //strcat(path2,new_line[0]);
@@ -1024,7 +1024,7 @@ case GST_MESSAGE_ELEMENT:
           printf("path---########----------%s\n",path);
          //  g_print ("name-after strcpy--path--------- %s\n",path);
           printf("array data is ==============================================%s",new_line[0]);
-          char path3[100]="/home/bitcomm-06/Gstreamer/Videos/Cam1/";
+          char path3[100]="/home/shubham-06/Gstreamer/Videos/Cam1/";
           
          // printf("array data is ==============================================%s",new_line[0]);
           strcat(path3,CurrentDate);
@@ -1233,8 +1233,8 @@ if (!gst_element_link_many(data.queue1, data.videoconvert1, data.sink, NULL))
   }
   
      char buff[150]; 
-     char path[150]="//home//bitcomm-06//Gstreamer//Videos//Cam2//";  
-   //  char path2[]="/home/bitcomm-31/Videos/";  
+     char path[150]="//home//shubham-06//Gstreamer//Videos//Cam2//";  
+   //  char path2[]="/home/shubham-31/Videos/";  
      strcat(path,new_line[0]);
      //strcat(path2,new_line[0]);
      printf("path1 data is s==============================================%s",path);
@@ -1368,7 +1368,7 @@ case GST_MESSAGE_ELEMENT:
           sprintf(path,"%s",filename);
           printf("path---########----------%s\n",path);
            g_print ("name-after strcpy--path--------- %s\n",path);
-          char path3[100]="/home/bitcomm-06/Gstreamer/Videos/Cam2/";
+          char path3[100]="/home/shubham-06/Gstreamer/Videos/Cam2/";
           
        //   printf("array data is ==============================================%s",new_line[0]);
           strcat(path3,new_line[0]);
@@ -1606,8 +1606,8 @@ if (!gst_element_link_many(data.queue1, data.videoconvert1, data.sink, NULL))
   }
   
      char buff[150]; 
-     char path[150]="//home//bitcomm-06//Gstreamer//Videos//Cam3//";  
-   //  char path2[]="/home/bitcomm-31/Videos/";  
+     char path[150]="//home//shubham-06//Gstreamer//Videos//Cam3//";  
+   //  char path2[]="/home/shubham-31/Videos/";  
      strcat(path,new_line[0]);
      //strcat(path2,new_line[0]);
      printf("path1 data is s==============================================%s",path);
@@ -1741,7 +1741,7 @@ case GST_MESSAGE_ELEMENT:
           sprintf(path,"%s",filename);
           printf("path---########----------%s\n",path);
            g_print ("name-after strcpy--path--------- %s\n",path);
-          char path3[100]="/home/bitcomm-06/Gstreamer/Videos/Cam3/";
+          char path3[100]="/home/shubham-06/Gstreamer/Videos/Cam3/";
           
           printf("array data is ==============================================%s",new_line[0]);
           strcat(path3,new_line[0]);
@@ -1979,8 +1979,8 @@ if (!gst_element_link_many(data.queue1, data.videoconvert1, data.sink, NULL))
   }
   
      char buff[150]; 
-     char path[150]="//home//bitcomm-06//Gstreamer//Videos//Cam4//";  
-   //  char path2[]="/home/bitcomm-31/Videos/";  
+     char path[150]="//home//shubham-06//Gstreamer//Videos//Cam4//";  
+   //  char path2[]="/home/shubham-31/Videos/";  
      strcat(path,new_line[0]);
      //strcat(path2,new_line[0]);
      printf("path1 data is s==============================================%s",path);
@@ -2113,7 +2113,7 @@ case GST_MESSAGE_ELEMENT:
           sprintf(path,"%s",filename);
           printf("path---########----------%s\n",path);
            g_print ("name-after strcpy--path--------- %s\n",path);
-          char path3[100]="/home/bitcomm-06/Gstreamer/Videos/Cam4/";
+          char path3[100]="/home/shubham-06/Gstreamer/Videos/Cam4/";
           
           printf("array data is ==============================================%s",new_line[0]);
           strcat(path3,new_line[0]);
@@ -2349,8 +2349,8 @@ if (!gst_element_link_many(data.queue1, data.videoconvert1, data.sink, NULL))
   }
   
      char buff[150]; 
-     char path[150]="//home//bitcomm-06//Gstreamer//Videos//Cam5//";  
-   //  char path2[]="/home/bitcomm-31/Videos/";  
+     char path[150]="//home//shubham-06//Gstreamer//Videos//Cam5//";  
+   //  char path2[]="/home/shubham-31/Videos/";  
      strcat(path,new_line[0]);
      //strcat(path2,new_line[0]);
      printf("path1 data is s==============================================%s",path);
@@ -2483,7 +2483,7 @@ case GST_MESSAGE_ELEMENT:
           sprintf(path,"%s",filename);
           printf("path---########----------%s\n",path);
            g_print ("name-after strcpy--path--------- %s\n",path);
-          char path3[100]="/home/bitcomm-06/Gstreamer/Videos/Cam5/";
+          char path3[100]="/home/shubham-06/Gstreamer/Videos/Cam5/";
           
           printf("array data is ==============================================%s",new_line[0]);
           strcat(path3,new_line[0]);
@@ -2721,8 +2721,8 @@ if (!gst_element_link_many(data.queue1, data.videoconvert1, data.sink, NULL))
   }
   
      char buff[150]; 
-     char path[150]="//home//bitcomm-06//Gstreamer//Videos//Cam6//";  
-   //  char path2[]="/home/bitcomm-31/Videos/";  
+     char path[150]="//home//shubham-06//Gstreamer//Videos//Cam6//";  
+   //  char path2[]="/home/shubham-31/Videos/";  
      strcat(path,new_line[0]);
      //strcat(path2,new_line[0]);
      printf("path1 data is s==============================================%s",path);
@@ -2855,7 +2855,7 @@ case GST_MESSAGE_ELEMENT:
           sprintf(path,"%s",filename);
           printf("path---########----------%s\n",path);
            g_print ("name-after strcpy--path--------- %s\n",path);
-          char path3[100]="/home/bitcomm-06/Gstreamer/Videos/Cam6/";
+          char path3[100]="/home/shubham-06/Gstreamer/Videos/Cam6/";
           
           printf("array data is ==============================================%s",new_line[0]);
           strcat(path3,new_line[0]);
@@ -3092,8 +3092,8 @@ if (!gst_element_link_many(data.queue1, data.videoconvert1, data.sink, NULL))
   }
   
      char buff[150]; 
-     char path[150]="//home//bitcomm-06//Gstreamer//Videos//Cam7//";  
-   //  char path2[]="/home/bitcomm-31/Videos/";  
+     char path[150]="//home//shubham-06//Gstreamer//Videos//Cam7//";  
+   //  char path2[]="/home/shubham-31/Videos/";  
      strcat(path,new_line[0]);
      //strcat(path2,new_line[0]);
      printf("path1 data is s==============================================%s",path);
@@ -3227,7 +3227,7 @@ case GST_MESSAGE_ELEMENT:
           sprintf(path,"%s",filename);
           printf("path---########----------%s\n",path);
            g_print ("name-after strcpy--path--------- %s\n",path);
-          char path3[100]="/home/bitcomm-06/Gstreamer/Videos/Cam7/";
+          char path3[100]="/home/shubham-06/Gstreamer/Videos/Cam7/";
           
           printf("array data is ==============================================%s",new_line[0]);
           strcat(path3,CurrentDate);
@@ -3464,8 +3464,8 @@ if (!gst_element_link_many(data.queue1, data.videoconvert1, data.sink, NULL))
   }
   
      char buff[150]; 
-     char path[150]="//home//bitcomm-06//Gstreamer//Videos//Cam8//";  
-   //  char path2[]="/home/bitcomm-31/Videos/";  
+     char path[150]="//home//shubham-06//Gstreamer//Videos//Cam8//";  
+   //  char path2[]="/home/shubham-31/Videos/";  
      strcat(path,new_line[0]);
      //strcat(path2,new_line[0]);
      printf("path1 data is s==============================================%s",path);
@@ -3598,7 +3598,7 @@ case GST_MESSAGE_ELEMENT:
           sprintf(path,"%s",filename);
           printf("path---########----------%s\n",path);
            g_print ("name-after strcpy--path--------- %s\n",path);
-          char path3[100]="/home/bitcomm-06/Gstreamer/Videos/Cam8/";
+          char path3[100]="/home/shubham-06/Gstreamer/Videos/Cam8/";
           
           printf("array data is ==============================================%s",new_line[0]);
           strcat(path3,new_line[0]);
